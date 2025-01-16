@@ -14,7 +14,7 @@ const MainRoute = () => {
     <>
       {/* <Navbar /> */}
       <Routes>
-        <Route path="/" element={<VMSStartPage />}></Route>
+        <Route path="/startRecording" element={<VMSStartPage />}></Route>
         <Route path="/register" element={<Register />}></Route>
         <Route path="/recordingStarted" element={<VMSInterface />}></Route>
         <Route path="/scanFailed" element={<ScanFailed />}></Route>
@@ -23,7 +23,7 @@ const MainRoute = () => {
           path="/successPage"
           element={<VideoCapturedNotification />}
         ></Route>
-        <Route path="/recordingOptionPage" element={<OptionPage />}></Route>
+        <Route path="/" element={<OptionPage />}></Route>
         <Route path="/passOrFail" element={<PassFail />}></Route>
         <Route path="/login" element={<LoginPage />}></Route>
       </Routes>
